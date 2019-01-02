@@ -62,6 +62,10 @@ public class YPImagePicker: UINavigationController {
         setupLoadingView()
         navigationBar.isTranslucent = false
 
+        if let statusBar = UIApplication.shared.value(forKey: "statusBar") as? UIView {
+            statusBar.setValue(UIColor.white, forKey: "foregroundColor")
+        }
+    
         picker.didSelectItems = { [weak self] items in
             let showsFilters = YPConfig.showsFilters
             
