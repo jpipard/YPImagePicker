@@ -33,7 +33,7 @@ class YPSelectionsGalleryView: UIView {
         // Apply style
         collectionView.backgroundColor = .clear
         collectionView.showsHorizontalScrollIndicator = false
-        self.backgroundColor = UIColor.green
+        self.backgroundColor = Theme.shared.light
     }
 }
 

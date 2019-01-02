@@ -36,12 +36,12 @@ final class YPLibraryView: UIView {
             |line| ~ 1
         )
         
-        line.backgroundColor = UIColor.green
-        self.backgroundColor = UIColor.green
-        self.assetZoomableView.backgroundColor = UIColor.green
-        self.assetViewContainer.backgroundColor = UIColor.green
-        self.collectionView.backgroundColor = UIColor.green
-        
+        line.backgroundColor = Theme.shared.light
+        self.backgroundColor = Theme.shared.dark
+        self.assetZoomableView.backgroundColor = Theme.shared.dark
+        self.assetViewContainer.backgroundColor = Theme.shared.dark
+        self.collectionView.backgroundColor = Theme.shared.dark
+
         setupMaxNumberOfItemsView()
         setupProgressBarView()
     }

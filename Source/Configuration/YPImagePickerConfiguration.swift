@@ -79,13 +79,13 @@ public struct YPImagePickerConfiguration {
     public var hidesBottomBar = false
 
     /// Defines the preferredStatusBarAppearance
-    public var preferredStatusBarStyle = UIStatusBarStyle.default
+    public var preferredStatusBarStyle = UIStatusBarStyle.lightContent
     
     /// Defines the text colour to be shown when a bottom option is selected
-    public var bottomMenuItemSelectedColour = UIColor(r: 38, g: 38, b: 38)
+    public var bottomMenuItemSelectedColour = Theme.shared.text1
     
     /// Defines the text colour to be shown when a bottom option is unselected
-    public var bottomMenuItemUnSelectedColour = UIColor(r: 153, g: 153, b: 153)
+    public var bottomMenuItemUnSelectedColour = Theme.shared.text2
     
     /// List of default filters which will be added on the filter screen
     public var filters: [YPFilter] = [

@@ -47,8 +47,8 @@ public class YPSelectionsGalleryVC: UIViewController {
         YPHelper.changeBackButtonIcon(self)
         YPHelper.changeBackButtonTitle(self)
 
-        self.view.backgroundColor = UIColor.green
-        v.collectionView.backgroundColor = UIColor.green
+        self.view.backgroundColor = Theme.shared.light
+        v.collectionView.backgroundColor = Theme.shared.light
     }
 
     @objc

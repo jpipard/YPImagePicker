@@ -16,7 +16,7 @@ final class YPBottomPagerView: UIView {
     
     convenience init() {
         self.init(frame: .zero)
-        backgroundColor = UIColor.green
+        backgroundColor = Theme.shared.light
         
         sv(
             scrollView,
@@ -36,7 +36,7 @@ final class YPBottomPagerView: UIView {
             header.bottom(0)
         }
         header.heightConstraint?.constant = YPConfig.hidesBottomBar ? 0 : 44
-        header.backgroundColor = UIColor.green
+        header.backgroundColor = Theme.shared.light
         
         clipsToBounds = false
         setupScrollView()
@@ -48,6 +48,6 @@ final class YPBottomPagerView: UIView {
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.scrollsToTop = false
         scrollView.bounces = false
-        scrollView.backgroundColor = UIColor.green
+        scrollView.backgroundColor = Theme.shared.light
     }
 }

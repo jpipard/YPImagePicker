@@ -38,7 +38,7 @@ public class YPCameraVC: UIViewController, UIGestureRecognizerDelegate, YPPermis
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.focusTapped(_:)))
         tapRecognizer.delegate = self
         v.previewViewContainer.addGestureRecognizer(tapRecognizer)
-        self.view.backgroundColor = UIColor.green
+        self.view.backgroundColor = UIColor.blue
     }
     
     func start() {

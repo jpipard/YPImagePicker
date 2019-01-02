@@ -29,7 +29,7 @@ final class YPMenuItem: UIView {
     }
     
     func setup() {
-        backgroundColor = UIColor.green
+        backgroundColor = Theme.shared.light
         
         sv(
             textLabel,
