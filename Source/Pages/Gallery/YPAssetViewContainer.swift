@@ -32,7 +32,7 @@ class YPAssetViewContainer: UIView {
         addSubview(grid)
         grid.frame = frame
         clipsToBounds = true
-        
+
         for sv in subviews {
             if let cv = sv as? YPAssetZoomableView {
                 zoomableView = cv
@@ -81,7 +81,7 @@ class YPAssetViewContainer: UIView {
         multipleSelectionButton-15-|
         multipleSelectionButton.setImage(YPConfig.icons.multipleSelectionOffIcon, for: .normal)
         multipleSelectionButton.Bottom == zoomableView!.Bottom - 15
-        
+        self.backgroundColor = Theme.shared.dark
     }
     
     // MARK: - Square button
@@ -128,6 +128,7 @@ extension YPAssetViewContainer: YPAssetZoomableViewDelegate {
         // update grid position
         grid.frame = frame.intersection(newFrame)
         grid.layoutIfNeeded()
+        self.backgroundColor = Theme.shared.dark
         
         // Update play imageView position - bringing the playImageView from the videoView to assetViewContainer,
         // but the controll for appearing it still in videoView.

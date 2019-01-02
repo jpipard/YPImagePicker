@@ -41,6 +41,7 @@ class YPAlbumVC: UIViewController {
                                                            action: #selector(close))
         setUpTableView()
         fetchAlbumsInBackground()
+        self.view.backgroundColor = Theme.shared.dark
     }
     
     func fetchAlbumsInBackground() {

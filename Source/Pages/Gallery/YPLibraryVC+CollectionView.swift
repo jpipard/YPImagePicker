@@ -20,6 +20,7 @@ extension YPLibraryVC {
         let longPressGR = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(longPressGR:)))
         longPressGR.minimumPressDuration = 0.5
         v.collectionView.addGestureRecognizer(longPressGR)
+        v.collectionView.backgroundColor = Theme.shared.dark
     }
     
     /// When tapping on the cell with long press, clear all previously selected cells.

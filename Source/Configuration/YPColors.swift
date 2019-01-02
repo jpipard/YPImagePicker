@@ -13,7 +13,7 @@ public struct YPColors {
    // MARK: - Common
 
     /// The common tint color which is used for done buttons in navigation bar, multiple items selection and so on.
-    public var tintColor = UIColor(r: 10, g: 120, b: 254)
+    public var tintColor = Theme.shared.text2
         
     /// A color for navigation bar spinner.
     /// Default is nil, which is default iOS gray UIActivityIndicator.
@@ -24,26 +24,26 @@ public struct YPColors {
     public var multipleItemsSelectedCircleColor: UIColor?
     
     /// The background color of the bottom of photo and video screens.
-    public var photoVideoScreenBackground: UIColor = .white
+    public var photoVideoScreenBackground: UIColor = UIColor.green
     
     // MARK: - Trimmer
     
     /// The color of the main border of the view
     public var trimmerMainColor: UIColor = UIColor.black
     /// The color of the handles on the side of the view
-    public var trimmerHandleColor: UIColor = UIColor.white
+    public var trimmerHandleColor: UIColor = UIColor.green
     /// The color of the position indicator
-    public var positionLineColor: UIColor = UIColor.white
+    public var positionLineColor: UIColor = UIColor.green
     
    // MARK: - Cover selector
     
     /// The color of the cover selector border
-    public var coverSelectorBorderColor: UIColor = UIColor.white
+    public var coverSelectorBorderColor: UIColor = UIColor.green
     
     // MARK: - Progress bar
     
     /// The color for the progress bar when processing video or images. The all track color.
-    public var progressBarTrackColor: UIColor = UIColor.white
+    public var progressBarTrackColor: UIColor = UIColor.green
     /// The color of completed track for the progress bar
     public var progressBarCompletedColor: UIColor?
 }

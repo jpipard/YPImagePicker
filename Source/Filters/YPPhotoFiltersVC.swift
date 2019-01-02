@@ -95,6 +95,9 @@ open class YPPhotoFiltersVC: UIViewController, IsMediaFilterVC, UIGestureRecogni
         touchDownGR.delegate = self
         v.imageView.addGestureRecognizer(touchDownGR)
         v.imageView.isUserInteractionEnabled = true
+
+        self.view.backgroundColor = Theme.shared.dark
+        v.collectionView.backgroundColor = Theme.shared.dark
     }
     
     // MARK: Setup - ⚙️

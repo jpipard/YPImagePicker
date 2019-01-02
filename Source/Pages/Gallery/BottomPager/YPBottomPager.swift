@@ -31,6 +31,7 @@ public class YPBottomPager: UIViewController, UIScrollViewDelegate {
         self.automaticallyAdjustsScrollViewInsets = false
         v.scrollView.delegate = self
         view = v
+        v.backgroundColor = UIColor.green
     }
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {

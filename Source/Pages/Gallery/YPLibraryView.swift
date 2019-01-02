@@ -36,7 +36,11 @@ final class YPLibraryView: UIView {
             |line| ~ 1
         )
         
-        line.backgroundColor = .white
+        line.backgroundColor = UIColor.green
+        self.backgroundColor = UIColor.green
+        self.assetZoomableView.backgroundColor = UIColor.green
+        self.assetViewContainer.backgroundColor = UIColor.green
+        self.collectionView.backgroundColor = UIColor.green
         
         setupMaxNumberOfItemsView()
         setupProgressBarView()
@@ -93,6 +97,7 @@ extension YPLibraryView {
         let nib = UINib(nibName: "YPLibraryView",
                         bundle: bundle)
         let xibView = nib.instantiate(withOwner: self, options: nil)[0] as? YPLibraryView
+        xibView?.backgroundColor = Theme.shared.dark
         return xibView
     }
     

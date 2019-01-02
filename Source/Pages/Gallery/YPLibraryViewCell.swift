@@ -89,9 +89,9 @@ class YPLibraryViewCell: UICollectionViewCell {
         durationLabel.textColor = .white
         durationLabel.font = .systemFont(ofSize: 12)
         durationLabel.isHidden = true
-        selectionOverlay.backgroundColor = .white
+        selectionOverlay.backgroundColor = UIColor.green
         selectionOverlay.alpha = 0
-        backgroundColor = UIColor(r: 247, g: 247, b: 247)
+        backgroundColor = Theme.shared.dark
     }
 
     override var isSelected: Bool {
