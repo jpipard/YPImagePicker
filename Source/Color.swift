@@ -25,7 +25,7 @@ public class Theme {
     }
 
     public struct ThemeColor {
-        var dark = Theme.shared.light
+        var dark = YPConfig.colors.color1
         var light = UIColor.red
         var text1 = UIColor.lightGray
         var text2 = UIColor.blue
@@ -91,7 +91,7 @@ public class Theme {
             barStyle: .black
         ),
         ThemeName.Debug: ThemeColor(
-            dark: Theme.shared.light,
+            dark: YPConfig.colors.color1,
             light: UIColor.red,
             text1: UIColor.lightGray,
             text2: UIColor.blue,

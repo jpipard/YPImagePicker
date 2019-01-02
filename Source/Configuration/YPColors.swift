@@ -24,26 +24,30 @@ public struct YPColors {
     public var multipleItemsSelectedCircleColor: UIColor?
     
     /// The background color of the bottom of photo and video screens.
-    public var photoVideoScreenBackground: UIColor = Theme.shared.light
+    public var photoVideoScreenBackground: UIColor = YPConfig.colors.color1
     
     // MARK: - Trimmer
     
     /// The color of the main border of the view
     public var trimmerMainColor: UIColor = UIColor.black
     /// The color of the handles on the side of the view
-    public var trimmerHandleColor: UIColor = Theme.shared.light
+    public var trimmerHandleColor: UIColor = YPConfig.colors.color1
     /// The color of the position indicator
-    public var positionLineColor: UIColor = Theme.shared.light
+    public var positionLineColor: UIColor = YPConfig.colors.color1
     
    // MARK: - Cover selector
     
     /// The color of the cover selector border
-    public var coverSelectorBorderColor: UIColor = Theme.shared.light
+    public var coverSelectorBorderColor: UIColor = YPConfig.colors.color1
     
     // MARK: - Progress bar
     
     /// The color for the progress bar when processing video or images. The all track color.
-    public var progressBarTrackColor: UIColor = Theme.shared.light
+    public var progressBarTrackColor: UIColor = YPConfig.colors.color1
     /// The color of completed track for the progress bar
     public var progressBarCompletedColor: UIColor?
+    
+    public var color1 = UIColor.blue
+    
+    public var color2 = UIColor.green
 }

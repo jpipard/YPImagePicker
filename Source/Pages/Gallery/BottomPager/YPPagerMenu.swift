@@ -16,7 +16,7 @@ final class YPPagerMenu: UIView {
     
     convenience init() {
         self.init(frame: .zero)
-        backgroundColor = Theme.shared.light
+        backgroundColor = YPConfig.colors.color1
         clipsToBounds = true
     }
     

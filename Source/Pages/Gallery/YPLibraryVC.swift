@@ -86,7 +86,7 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
                 strongSelf.updateCropInfo()
             }
         }
-        view.backgroundColor = Theme.shared.dark
+        view.backgroundColor = YPConfig.colors.color2
     }
     
     public override func viewDidAppear(_ animated: Bool) {

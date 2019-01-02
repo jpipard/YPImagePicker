@@ -26,6 +26,6 @@ class YPAlbumView: UIView {
         spinner.centerInContainer()
         tableView.fillContainer()
         
-        backgroundColor = Theme.shared.dark
+        backgroundColor = YPConfig.colors.color2
     }
 }

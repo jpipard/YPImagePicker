@@ -38,7 +38,7 @@ class YPGridView: UIView {
         line4.left(0).height(stroke).right(0)
         line4.Bottom == 66 % Bottom
         
-        let color = Theme.shared.light.withAlphaComponent(0.6)
+        let color = YPConfig.colors.color1.withAlphaComponent(0.6)
         line1.backgroundColor = color
         line2.backgroundColor = color
         line3.backgroundColor = color
